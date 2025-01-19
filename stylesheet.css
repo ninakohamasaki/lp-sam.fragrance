@@ -1,7 +1,14 @@
-/* 画像のサイズを調整 */
-.image {
-    width: 100%;        /* 画面幅に合わせて画像を調整 */
-    height: auto;       /* 縦横比を保ったままサイズ調整 */
-    display: block;     /* 画像の下に余白ができないようにする */
-    margin: 0 auto;     /* 画像を中央に配置 */
+/* bodyの高さを100vhにして全体をフルスクリーンに */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* 水平方向に中央配置 */
+    align-items: center;      /* 垂直方向に中央配置 */
+}
+
+/* 画像をそのまま表示 */
+img {
+    max-width: 100%;  /* 画像が画面幅を超えないようにする */
+    height: auto;     /* 縦横比を保ってサイズ調整 */
 }
