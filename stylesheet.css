@@ -1,3 +1,4 @@
+/* 全体の余白やボックスのサイズをリセット */
 * {
   margin: 0;
   padding: 0;
@@ -6,25 +7,29 @@
 
 html, body {
   height: 100%;
-  overflow: hidden; /* ページ全体のスクロールを無効化 */
+  overflow: hidden; /* ページのスクロールを無効化 */
 }
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow-y: scroll; /* 縦スクロールを有効にする */
+  justify-content: center; /* 横方向の中央配置 */
+  align-items: center;     /* 縦方向の中央配置 */
+  height: 100vh;           /* ビューポート全体を使用 */
+  overflow: auto;          /* 縦スクロールを有効にする */
 }
 
+/* 画像を囲むコンテナ */
 .image-wrapper {
-  max-height: 100%;
-  width: auto;
-  overflow: auto; /* 画像をスクロールできるようにする */
+  display: flex;
+  justify-content: center; /* 横方向の中央配置 */
+  align-items: center;     /* 縦方向の中央配置 */
+  max-height: 100%;         /* 画面の高さに合わせる */
+  width: 100%;              /* 横幅いっぱいに表示 */
+  overflow: auto;           /* スクロールを有効にする */
 }
 
+/* 画像の表示設定 */
 img {
-  display: block;
-  width: 100%;
-  height: auto;
+  max-width: 100%;   /* 横幅を親要素に合わせる */
+  height: auto;      /* 縦方向のサイズは自動調整 */
 }
