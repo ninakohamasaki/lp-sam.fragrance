@@ -6,20 +6,25 @@
 
 html, body {
   height: 100%;
-  /*overflow: hidden;  スクロールを無効にする場合 */
+  overflow: hidden; /* ページ全体のスクロールを無効化 */
 }
 
-.image-container {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  /* overflow: hidden; 画像がはみ出さないようにする */
+  height: 100vh;
+  overflow-y: scroll; /* 縦スクロールを有効にする */
+}
+
+.image-wrapper {
+  max-height: 100%;
+  width: auto;
+  overflow: auto; /* 画像をスクロールできるようにする */
 }
 
 img {
-  height: auto; /* 縦に長く表示されるように */
-  max-width: 100%;
-  /*object-fit: contain;  画像がはみ出さないように調整 */
+  display: block;
+  width: 100%;
+  height: auto;
 }
