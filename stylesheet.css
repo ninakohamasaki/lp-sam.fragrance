@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  overflow: auto;    ページのスクロールを無効化 */
+  /*overflow: auto;    ページのスクロールを無効化 */
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center; /* 横方向の中央配置 */
   align-items: center;     /* 縦方向の中央配置 */
-  max-height: 100%;         /* 画面の高さに合わせる */
+  /*max-height: 100%;          画面の高さに合わせる */
   width: 100%;              /* 横幅いっぱいに表示 */
   overflow: auto;           /* スクロールを有効にする */
 }
