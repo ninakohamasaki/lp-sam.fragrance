@@ -1,14 +1,25 @@
-/* bodyの高さを100vhにして全体をフルスクリーンに */
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;  /* 水平方向に中央配置 */
-    align-items: center;      /* 垂直方向に中央配置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 画像をそのまま表示 */
+html, body {
+  height: 100%;
+  overflow: hidden; /* スクロールを無効にする場合 */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* 画像がはみ出さないようにする */
+}
+
 img {
-    max-width: 100%;  /* 画像が画面幅を超えないようにする */
-    height: auto;     /* 縦横比を保ってサイズ調整 */
+  height: auto; /* 縦に長く表示されるように */
+  max-width: 100%;
+  object-fit: contain; /* 画像がはみ出さないように調整 */
 }
