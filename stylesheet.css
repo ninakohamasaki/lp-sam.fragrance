@@ -7,7 +7,7 @@
 
 html, body {
   height: 100%;
-  overflow: hidden; /* ページのスクロールを無効化 */
+  overflow: auto;    ページのスクロールを無効化 */
 }
 
 body {
