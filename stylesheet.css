@@ -6,7 +6,7 @@
 
 html, body {
   height: 100%;
-  overflow: hidden; /* スクロールを無効にする場合 */
+  /*overflow: hidden;  スクロールを無効にする場合 */
 }
 
 .image-container {
